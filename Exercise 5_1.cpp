@@ -10,8 +10,14 @@ int main()
 	std::cout<<"hello enter limit thanks" << std::endl;
 	int limit {};
 	std::cin>>limit;
-	std::cout<<limit<<std::endl;
+	std::cout<<"The squares of the odd integers ";
+	for (int i{1}; i<=limit; i+=2){
+		std::cout << i * i << " ";
+	}
 
+	/*********************************
+	********THIS IF ELSE is not needed   
+	
 	if(limit%2){
 		std::cout<<"The squares of the odd integers ";
 		for(int i{1}, temp {limit}; i<=temp; i+=2){
@@ -25,5 +31,5 @@ int main()
 					std::cout << i * i << " ";
 		}
 	}
-
+	*/
 }

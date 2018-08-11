@@ -21,7 +21,7 @@ int main()
 	const size_t tenToALine{10};
 	for(size_t i {0}; i<max ; i++){
 		std::cout<<std::setw(3)<<*pOdds++;
-		if((i+1) % tenToALine==0){
+		if(! ((i+1) % tenToALine)){	//remove the equality check
 			std::cout<<std::endl;
 		}
 	}
